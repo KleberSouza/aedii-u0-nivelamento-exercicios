@@ -5,7 +5,7 @@ echo "Running tests..."
 result=0
 for name in *; do 
   if [ -d "$name" ] && [ ! -L "$name" ]; then
-    ./test.sh $name > /dev/null
+    bash test.sh $name > /dev/null
 
     if [ $? -eq 0 ]; 
     then 
